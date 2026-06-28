@@ -86,7 +86,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # PV system parameters
-tz = 'US/Eastern'
+tz = 'America/New_York'
 lat, lon = 40, -80
 gcr = 0.4
 

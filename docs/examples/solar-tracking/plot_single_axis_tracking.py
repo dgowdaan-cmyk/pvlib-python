@@ -24,7 +24,7 @@ from pvlib import solarposition, tracking
 import pandas as pd
 import matplotlib.pyplot as plt
 
-tz = 'US/Eastern'
+tz = 'America/New_York'
 lat, lon = 40, -80
 
 times = pd.date_range('2019-01-01', '2019-01-02', freq='5min',

@@ -66,7 +66,7 @@ returns a :py:class:`pandas.DataFrame`.
 
 .. ipython::
 
-    In [1]: tus = Location(32.2, -111, 'US/Arizona', 700, 'Tucson')
+    In [1]: tus = Location(32.2, -111, 'America/Phoenix', 700, 'Tucson')
 
     In [1]: times = pd.date_range(start='2016-07-01', end='2016-07-04', freq='1min', tz=tus.tz)
 
@@ -264,7 +264,7 @@ A clear sky time series using only basic pvlib functions.
 
 .. ipython::
 
-    In [1]: latitude, longitude, tz, altitude, name = 32.2, -111, 'US/Arizona', 700, 'Tucson'
+    In [1]: latitude, longitude, tz, altitude, name = 32.2, -111, 'America/Phoenix', 700, 'Tucson'
 
     In [1]: times = pd.date_range(start='2014-01-01', end='2014-01-02', freq='1Min', tz=tz)
 
@@ -404,7 +404,7 @@ A clear sky time series using only basic pvlib functions.
 
 .. ipython::
 
-    In [1]: latitude, longitude, tz, altitude, name = 32.2, -111, 'US/Arizona', 700, 'Tucson'
+    In [1]: latitude, longitude, tz, altitude, name = 32.2, -111, 'America/Phoenix', 700, 'Tucson'
 
     In [1]: times = pd.date_range(start='2014-01-01', end='2014-01-02', freq='1Min', tz=tz)
 

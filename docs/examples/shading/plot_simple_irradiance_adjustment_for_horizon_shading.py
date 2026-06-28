@@ -23,7 +23,7 @@ import pvlib
 
 # Golden, CO
 latitude, longitude = 39.76, -105.22
-tz = 'MST'
+tz = 'America/Phoenix'
 
 # Set times in the morning of the December solstice.
 times = pd.date_range(

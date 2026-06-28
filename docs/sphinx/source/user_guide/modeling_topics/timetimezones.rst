@@ -60,7 +60,7 @@ And you can also filter for GMT-based fixed offset zones:
 
     sorted(filter(lambda x: 'GMT' in x, zoneinfo.available_timezones()))
 
-Note that while the IANA database has ``'EST'`` and ``'MST'``, it does not have
+Note that while the IANA database has ``'EST'`` and ``'America/Phoenix'``, it does not have
 ``'PST'``. Use ``'Etc/GMT+8'`` instead, or see :ref:`fixedoffsets`.
 
 Timestamps
@@ -109,21 +109,21 @@ Daylight savings time
 *********************
 
 Some time zones are aware of daylight savings time and some are not. For
-example the winter time results are the same for US/Mountain and MST,
+example the winter time results are the same for America/Denver and MST,
 but the summer time results are not.
 
 Note the UTC offset in winter...
 
 .. ipython:: python
 
-    pd.Timestamp('2015-1-1 00:00').tz_localize('US/Mountain')
+    pd.Timestamp('2015-1-1 00:00').tz_localize('America/Denver')
     pd.Timestamp('2015-1-1 00:00').tz_localize('Etc/GMT+7')
 
 vs. the UTC offset in summer...
 
 .. ipython:: python
 
-    pd.Timestamp('2015-6-1 00:00').tz_localize('US/Mountain')
+    pd.Timestamp('2015-6-1 00:00').tz_localize('America/Denver')
     pd.Timestamp('2015-6-1 00:00').tz_localize('Etc/GMT+7')
 
 pandas makes this time zone handling possible because pandas
@@ -140,8 +140,8 @@ will use the same integer to represent them.
 
 .. ipython:: python
 
-    # US/Mountain
-    pd.Timestamp('2015-6-1 01:00', tz='US/Mountain').value
+    # America/Denver
+    pd.Timestamp('2015-6-1 01:00', tz='America/Denver').value
 
     # MST
     pd.Timestamp('2015-6-1 00:00', tz='Etc/GMT+7').value
@@ -219,7 +219,7 @@ expected.
     pd.Timestamp(naive_python_dt)
 
     # tz aware python datetime.datetime object using zoneinfo
-    aware_python_dt = naive_python_dt.replace(tzinfo=zoneinfo.ZoneInfo('US/Mountain'))
+    aware_python_dt = naive_python_dt.replace(tzinfo=zoneinfo.ZoneInfo('America/Denver'))
 
     # tz aware pandas Timestamp object
     pd.Timestamp(aware_python_dt)
@@ -243,7 +243,7 @@ convert it to a :py:class:`python:datetime.datetime`.
    :okexcept:
 
     # fail: datetime.date has no tzinfo support via replace
-    naive_python_date.replace(tzinfo=zoneinfo.ZoneInfo('US/Mountain'))
+    naive_python_date.replace(tzinfo=zoneinfo.ZoneInfo('America/Denver'))
 
 
 pvlib-specific functionality

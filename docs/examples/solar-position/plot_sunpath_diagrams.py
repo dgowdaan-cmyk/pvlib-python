@@ -21,7 +21,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-tz = 'Asia/Calcutta'
+tz = 'Asia/Kolkata'
 lat, lon = 28.6, 77.2
 
 times = pd.date_range('2019-01-01 00:00:00', '2020-01-01', freq='h', tz=tz)
@@ -110,7 +110,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-tz = 'Asia/Calcutta'
+tz = 'Asia/Kolkata'
 lat, lon = 28.6, 77.2
 times = pd.date_range('2019-01-01 00:00:00', '2020-01-01', freq='h', tz=tz)
 

@@ -18,7 +18,7 @@ import pandas as pd
 from matplotlib import pyplot as plt
 
 # For this example, we will be using Golden, Colorado
-tz = 'MST'
+tz = 'America/Phoenix'
 lat, lon = 39.755, -105.221
 
 # Create location object to store lat, lon, timezone

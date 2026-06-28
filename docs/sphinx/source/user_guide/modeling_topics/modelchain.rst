@@ -78,7 +78,7 @@ Next, we run a model with some simple weather data.
 
     weather = pd.DataFrame([[1050, 1000, 100, 30, 5]],
                            columns=['ghi', 'dni', 'dhi', 'temp_air', 'wind_speed'],
-                           index=[pd.Timestamp('20170401 1200', tz='US/Arizona')])
+                           index=[pd.Timestamp('20170401 1200', tz='America/Phoenix')])
 
     mc.run_model(weather)
 

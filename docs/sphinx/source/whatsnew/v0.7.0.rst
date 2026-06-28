@@ -1,4 +1,4 @@
-ï»¿.. _whatsnew_0700:
+.. _whatsnew_0700:
 
 v0.7.0 (December 18, 2019)
 --------------------------
@@ -224,7 +224,7 @@ Contributors
 * Oscar Dowson (:ghuser:`odow`)
 * Anton Driesse (:ghuser:`adriesse`)
 * Alexander Morgan (:ghuser:`alexandermorgan`)
-* Miguel SÃ¡nchez de LeÃ³n Peque (:ghuser:`Peque`)
+* Miguel Sánchez de León Peque (:ghuser:`Peque`)
 * Tanguy Lunel (:ghuser:`tylunel`)
 * Veronica Guo (:ghuser:`veronicaguo`)
 * Joseph Ranalli (:ghuser:`jranalli`)

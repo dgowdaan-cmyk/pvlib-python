@@ -229,7 +229,7 @@ model.run_model_from_poa(weather_inputs)
 
 fn = r"path/to/9068_ac_power_data.csv"
 df_inverter_measured = pd.read_csv(fn, index_col=0, parse_dates=True)
-df_inverter_measured = df_inverter_measured.tz_localize('US/Mountain',
+df_inverter_measured = df_inverter_measured.tz_localize('America/Denver',
                                                         ambiguous='NaT',
                                                         nonexistent='NaT')
 # convert to standard time to match the NSRDB-based simulation
